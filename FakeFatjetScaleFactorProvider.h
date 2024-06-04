@@ -9,7 +9,7 @@
 #include "Math/GenVector/VectorUtil.h"
 #include "Math/Point3D.h"
 /*
- * This class provide scale factor and uncertainties of fake fatjet, please check https://indico.cern.ch/event/1421212/contributions/5976640/attachments/2868594/5021712/CR_fake_fatjet_flavor.pdf
+ * This class provide scale factor and uncertainties of fake fatjet, please check https://indico.cern.ch/event/1421212/contributions/5976640/attachments/2868594/5021713/CR_fake_fatjet_flavor_pt_reweighted.pdf
  */
 
 typedef ROOT::Math::LorentzVector<ROOT::Math::PtEtaPhiM4D<float> > LV;
