@@ -22,7 +22,7 @@ int test_FakeFatjetScaleFactorProvider(){
 		if(type==-1){
 			cout<<"true fatjet, should use common branch"<<endl;
 		}
-		if(type==1){
+		else if(type==1){
 			cout<<"fake fatjet b, sf="<<fakefatjetsfprovider.eval(2018,type,1)
 				<<",sf_up="<<fakefatjetsfprovider.eval_up(2018,type,1)
 				<<",sf_dn="<<fakefatjetsfprovider.eval_down(2018,type,1)<<endl;
