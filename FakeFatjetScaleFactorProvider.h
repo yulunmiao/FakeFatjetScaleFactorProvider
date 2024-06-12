@@ -53,7 +53,7 @@ int FakeFatjetScaleFactorProvider::type(vector<LV> const &genp4, vector<int> con
 	bool istrue=false;
 	bool isb=false;
 	for(unsigned igen=0;igen<genpdgid.size();igen++){
-		if(!((abs(genmotherid.at(igen))==24)&&(abs(genpdgid.at(igen))<=6))) continue;
+		if(!(((abs(genmotherid.at(igen))==24) || (abs(genmotherid.at(igen))==23))&&(abs(genpdgid.at(igen))<=6))) continue;
 		if(ROOT::Math::VectorUtil::DeltaR(genp4.at(igen),fatjetp4)<0.8)
 			return -1;
 	}
